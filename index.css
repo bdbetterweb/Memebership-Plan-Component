@@ -1,32 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'karla', 'sans-serif';
+    font-family: 'Karla', sans-serif;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: hsl(204, 43%, 93%);
-    border: 1px solid blue;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.container{
+/* ── Dark mode overrides ── */
+body.dark {
+    background-color: #0f1923;
+}
+
+body.dark .texts {
+    background: linear-gradient(to right, #1e2d3f, #1a2a3a);
+}
+
+body.dark .texts-title {
+    color: hsl(179, 62%, 55%);
+}
+
+body.dark .texts-subtitle {
+    color: hsl(71, 73%, 60%);
+}
+
+body.dark .texts-text {
+    color: #8fa8c0;
+}
+
+body.dark .subPlan {
+    background-color: hsl(179, 40%, 28%);
+}
+
+body.dark .whyUsText {
+    background-color: hsl(179, 45%, 35%);
+}
+
+body.dark .price p {
+    color: #8fa8c0;
+}
+
+body.dark .btn:hover {
+    background-color: hsl(71, 73%, 40%);
+    color: #fff;
+    border-color: transparent;
+}
+
+/* ── Toggle button ── */
+.dark-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    z-index: 100;
+}
+
+.dark-toggle:hover {
+    background: #f0f0f0;
+}
+
+body.dark .dark-toggle {
+    background: #1e2d3f;
+    color: #e8f0f7;
+    border-color: #3a5068;
+}
+
+body.dark .dark-toggle:hover {
+    background: #2a3d52;
+}
+
+/* ── Card ── */
+.container {
     width: 750px;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 0 0 50px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-.texts{
+.texts {
     width: 100%;
     height: 45%;
     background: linear-gradient(to right, hsl(200, 39%, 95%), hsl(0, 0%, 100%));
@@ -37,32 +108,35 @@ body{
     padding: 40px 50px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    transition: background 0.3s;
 }
 
-.texts-title{
+.texts-title {
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 30px;
-    color: hsl(179, 62%, 43%)
+    color: hsl(179, 62%, 43%);
+    transition: color 0.3s;
 }
 
-.texts-subtitle{
+.texts-subtitle {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 15px;
     color: hsl(71, 73%, 54%);
+    transition: color 0.3s;
 }
 
-.texts-text{
-    width: 100%;
+.texts-text {
     font-size: 15px;
     font-weight: 400;
     color: hsl(218, 22%, 67%);
     line-height: 1.5;
     text-align: justify;
+    transition: color 0.3s;
 }
 
-.subPlan{
+.subPlan {
     width: 50%;
     height: 55%;
     border-bottom-left-radius: 10px;
@@ -72,118 +146,118 @@ body{
     justify-content: center;
     align-items: flex-start;
     padding: 40px 50px;
+    transition: background-color 0.3s;
 }
 
-.subPlan-title{
+.subPlan-title {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 25px;
-    color: hsl(0, 0%, 100%);
+    color: #fff;
 }
 
-.price{
+.price {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: hsl(0, 0%, 100%);
+    color: #fff;
     display: inline-flex;
     align-items: center;
 }
 
-.price p{
+.price p {
     font-size: 15px;
     font-weight: 400;
     margin-left: 15px;
     color: hsl(240, 1%, 78%);
+    transition: color 0.3s;
 }
 
-.subPlan-text{
-    width: 100%;
+.subPlan-text {
     font-size: 16px;
     font-weight: 400;
     color: white;
     line-height: 1.5;
     text-align: justify;
-    margin-bottom: 30px
+    margin-bottom: 30px;
 }
 
-.btn{
+.btn {
     width: 100%;
     height: 45px;
-    background-color:hsl(71, 73%, 54%);
+    background-color: hsl(71, 73%, 54%);
     color: white;
     font-weight: 400;
     font-size: 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: background-color 0.2s, color 0.2s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: hsl(0, 0%, 100%);
-    color:hsl(71, 73%, 54%);
+    color: hsl(71, 73%, 54%);
     border: 1px solid hsl(71, 73%, 54%);
 }
 
-.whyUsText{
+.whyUsText {
     width: 50%;
     height: 55%;
     border-bottom-right-radius: 10px;
     background-color: hsl(179, 56%, 50%);
     padding: 40px 50px;
+    transition: background-color 0.3s;
 }
 
-.whyUsText-title{
+.whyUsText-title {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 15px;
-    color: hsl(0, 0%, 100%);
+    color: #fff;
 }
 
-.whyUsText-list{
-    width: 100%;
-    color: white;
+.whyUsText-list {
     list-style-type: none;
 }
 
-.whyUsText-item{
+.whyUsText-item {
     margin-bottom: 8px;
     color: hsl(204, 43%, 93%);
     font-size: 15px;
 }
 
-@media (max-width: 700px){
-    body{
-        width: 100vw;
+/* ── Responsive ── */
+@media (max-width: 700px) {
+    body {
         height: auto;
-        padding: 100px 0;
+        padding: 80px 0 40px;
     }
 
-    .container{
+    .container {
         width: 85%;
-        height: 900px;
-        display: flex;  
+        height: auto;
         flex-direction: column;
         flex-wrap: nowrap;
-        box-shadow: 0 0 30px 2px rgba(0,0,0,0.1);
     }
 
-    .texts, .subPlan, .whyUsText{
+    .texts,
+    .subPlan,
+    .whyUsText {
         width: 100%;
-        height: 33.3%;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        padding: 20px;
+        height: auto;
+        border-radius: 0;
+        padding: 24px 20px;
     }
 
-    .whyUsText{
+    .texts {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .whyUsText {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-    }
-
-    .whyUsText-item{
-        margin-bottom: 10px;
     }
 }
